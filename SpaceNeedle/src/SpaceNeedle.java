@@ -15,15 +15,37 @@ public class SpaceNeedle
 	public static void main(String[] args)
     {
     	needle();
+    	
+    	
+    	needle();
     }
 	
-	//prints out the spire and the thin needle in the middle
+	//needle prints out the spire at the top of the building and the thin needle under the body
     public static void needle()
     {
     	//makes the correct number of rows
     	for(int i = 0; i < SCALE; i++)
     	{
-    		
+    		//prints the scaled number of spaces before the needle
+    		for(int j = 0; j < 3*SCALE; j++)
+    		{
+    			System.out.print(" ");
+    		}
+    		//then makes the needle itself
+    		System.out.print("||");
+    		System.out.println();
     	}
+    }
+    
+    //top prints the top half of the main body as well as the base
+    public static void top()
+    {
+    	//makes the number of rows
+    	for(int i = 0; i < SCALE; i++)
+    	{
+    		//adds spaces before the shape begins
+    	}
+    	
+    	//prints out the bottom line of the shape
     }
 }
