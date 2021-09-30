@@ -15,7 +15,7 @@ public class SpaceNeedle
 	public static void main(String[] args)
     {
     	needle();
-    	
+    	top();
     	
     	needle();
     }
@@ -44,8 +44,41 @@ public class SpaceNeedle
     	for(int i = 0; i < SIZE; i++)
     	{
     		//adds spaces before the shape begins
+    		for(int j = 0; j < (2*SIZE+1)- 3*i; j++)
+    		{
+    			System.out.print(" ");
+    		}
+    		
+    		//adds underscores and the forward slash
+    		System.out.print("__/");
+    		
+    		//adds the colons
+    		for(int k = 0; k < 3*i; k++)
+    		{
+    			System.out.print(":");
+    		}
+    		
+    		//backbone of the tower
+    		System.out.print("||");
+    		
+    		//colons after the shape
+    		for(int l = 0; l < 3*i; l++)
+    		{
+    			System.out.print(":");
+    		}
+    		
+    		//backslash and underscores the body of the shape
+    		System.out.print("\\__");
+    		//makes it a new line
+    		System.out.println();
     	}
-    	
     	//prints out the bottom line of the shape
+    	System.out.print("|");
+    	for(int m = 0; m < 6*SIZE; m++)
+    	{
+    		System.out.print("\"");
+    	}
+    	System.out.print("|");
+    	System.out.println();
     }
 }
