@@ -4,12 +4,12 @@
  * APCS Period 2
  * Space Needle Project
  * 
- * This program prints out an ASCII Space Needle, which can be scaled by changing the SCALE Integer
+ * This program prints out an ASCII Space Needle, which can be scaled by changing the SIZE Integer
  */
 public class SpaceNeedle
 {
-    //scale number
-	public static final Integer SCALE = 4;
+    //SIZE number
+	public static final Integer SIZE = 4;
 	
 	//main method, prints out the whole needle
 	public static void main(String[] args)
@@ -24,10 +24,10 @@ public class SpaceNeedle
     public static void needle()
     {
     	//makes the correct number of rows
-    	for(int i = 0; i < SCALE; i++)
+    	for(int i = 0; i < SIZE; i++)
     	{
-    		//prints the scaled number of spaces before the needle
-    		for(int j = 0; j < 3*SCALE; j++)
+    		//prints the SIZEd number of spaces before the needle
+    		for(int j = 0; j < 3*SIZE; j++)
     		{
     			System.out.print(" ");
     		}
@@ -41,7 +41,7 @@ public class SpaceNeedle
     public static void top()
     {
     	//makes the number of rows
-    	for(int i = 0; i < SCALE; i++)
+    	for(int i = 0; i < SIZE; i++)
     	{
     		//adds spaces before the shape begins
     	}
