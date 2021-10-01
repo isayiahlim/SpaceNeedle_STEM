@@ -11,7 +11,7 @@ public class SpaceNeedle
     //SIZE number
 	public static final Integer SIZE = 4;
 	
-	//main method, prints out the whole needle
+	//main method, prints out the whole building
 	public static void main(String[] args)
     {
     	needle();
@@ -76,6 +76,8 @@ public class SpaceNeedle
     	}
     	//prints out the bottom line of the shape
     	System.out.print("|");
+
+    	//adds the final quotations
     	for(int m = 0; m < 6*SIZE; m++)
     	{
     		System.out.print("\"");
@@ -96,6 +98,7 @@ public class SpaceNeedle
     			System.out.print(" ");
     		}
     		System.out.print("\\_");
+    		
     		//makes the scaled number of triangles (/\)
     		for(int j = 0; j < (3*SIZE - 1) - 2 * i; j++)
     		{
@@ -117,13 +120,18 @@ public class SpaceNeedle
     		{
     			System.out.print(" ");
     		}
+    		
     		//adds the outside lines
     		System.out.print("|");
+    		
+    		//adds the beginning parentheses
     		for(int k = 0; k < SIZE - 2; k++)
     		{
     			System.out.print("%");
     		}
     		System.out.print("||");
+    		
+    		//add the final parentheses 
     		for(int l = 0; l < SIZE - 2; l++)
     		{
     			System.out.print("%");
