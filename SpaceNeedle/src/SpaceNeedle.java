@@ -9,7 +9,7 @@
 public class SpaceNeedle
 {
     //SIZE number
-	public static final Integer SIZE = 4;
+	public static final Integer SIZE = 3;
 	
 	//main method, prints out the whole needle
 	public static void main(String[] args)
@@ -46,7 +46,7 @@ public class SpaceNeedle
     	for(int i = 0; i < SIZE; i++)
     	{
     		//adds spaces before the shape begins
-    		for(int j = 0; j < (2*SIZE+1)- 3*i; j++)
+    		for(int j = 0; j < 3*(SIZE - 1) - 3*i; j++)
     		{
     			System.out.print(" ");
     		}
