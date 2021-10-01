@@ -9,7 +9,7 @@
 public class SpaceNeedle
 {
     //SIZE number
-	public static final Integer SIZE = 3;
+	public static final Integer SIZE = 4;
 	
 	//main method, prints out the whole needle
 	public static void main(String[] args)
