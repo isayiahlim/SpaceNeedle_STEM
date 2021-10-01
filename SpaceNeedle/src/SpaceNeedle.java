@@ -16,8 +16,10 @@ public class SpaceNeedle
     {
     	needle();
     	top();
-    	
+    	bottom();
     	needle();
+    	middle();
+    	top();
     }
 	
 	//needle prints out the spire at the top of the building and the thin needle under the body
@@ -80,5 +82,54 @@ public class SpaceNeedle
     	}
     	System.out.print("|");
     	System.out.println();
+    }
+    
+    //prints the bottom half of the shape
+    public static void bottom()
+    {
+    	//makes the number of rows
+    	for(int i = 0; i< SIZE; i++)
+    	{
+    		//adds spaces before the shape
+    		for(int k = 0; k < 2*i; k++)
+    		{
+    			System.out.print(" ");
+    		}
+    		System.out.print("\\_");
+    		//makes the scaled number of triangles (/\)
+    		for(int j = 0; j < (3*SIZE - 1) - 2 * i; j++)
+    		{
+    			System.out.print("/\\");
+    		}
+    		System.out.print("_/");
+    		System.out.println();
+    	}
+    }
+    
+    //prints out the middle section
+    public static void middle()
+    {
+    	//sets the number of rows to SIZE ^ 2
+    	for(int i = 0; i < SIZE * SIZE; i++)
+    	{
+    		//makes the number of spaces
+    		for(int j = 0; j < 2* SIZE + 1; j++)
+    		{
+    			System.out.print(" ");
+    		}
+    		//adds the outside lines
+    		System.out.print("|");
+    		for(int k = 0; k < SIZE - 2; k++)
+    		{
+    			System.out.print("%");
+    		}
+    		System.out.print("||");
+    		for(int l = 0; l < SIZE - 2; l++)
+    		{
+    			System.out.print("%");
+    		}
+    		System.out.print("|");
+    		System.out.println();
+    	}
     }
 }
